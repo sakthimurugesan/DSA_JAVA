@@ -1,16 +1,17 @@
 public class LinkedListDemo {
 
-    static QueueLinkedList<Integer> obj=new QueueLinkedList<>();
+    static StackLinkedList<Integer> obj=new StackLinkedList<>();
 
     public static void main(String[] args) {
 
-        for (int i = 0; i < 5; i++) {
-            obj.enqueue(i+1);
+        for (int i = 0; i < 2; i++) {
+            obj.push(i+1);
         }
-        System.out.println(obj.rear());
-        System.out.println(obj.front());
-        System.out.println(obj.dequeue());
+
        obj.display();
+        System.out.println(obj.top());
+        System.out.println(obj.isEmpty());
+        obj.display();
     }
 
 }
