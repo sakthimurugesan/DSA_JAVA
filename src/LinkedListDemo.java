@@ -1,17 +1,25 @@
+
 public class LinkedListDemo {
 
-    static StackLinkedList<Integer> obj=new StackLinkedList<>();
+    public static void main(String[] args)
+    {
+        HashingClass<String,Integer> hash=new HashingClass<>();
+        hash.put("sakthi",12);
+        hash.put("sakthi1",12);hash.put("sakthi2",12);hash.put("sakthi2",14);
+        hash.put("sakthi",13);
+        hash.display();
 
-    public static void main(String[] args) {
-
-        for (int i = 0; i < 2; i++) {
-            obj.push(i+1);
+        try {
+//            System.out.println(5);
+            System.out.println(hash.get("sakthi5"));
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
         }
 
-       obj.display();
-        System.out.println(obj.top());
-        System.out.println(obj.isEmpty());
-        obj.display();
+
+
     }
 
 }
