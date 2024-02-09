@@ -10,7 +10,7 @@ public class LinkedListDemo {
         hash.display();
 
         try {
-//            System.out.println(5);
+            System.out.println(5);
             System.out.println(hash.get("sakthi5"));
         }
         catch (Exception e)
